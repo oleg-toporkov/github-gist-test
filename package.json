@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "REST API tests for GitHub Gist functionality",
   "scripts": {
-    "test": "mocha src/test/*.spec.ts --import=tsx --require dotenv/config"
+    "test": "mocha src/test/*.spec.ts"
   },
   "dependencies": {
     "@types/chai": "4.3.16",
