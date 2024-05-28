@@ -54,7 +54,9 @@ describe('Gist service', () => {
     });
 
     after(async () => {
-        const response = await GistService.deleteGist(gistId);
-        expect(response.status).to.equal(204);
+        if (gistId) {
+            const response = await GistService.deleteGist(gistId);
+            expect(response.status).to.equal(204);
+        }
     })
 })
